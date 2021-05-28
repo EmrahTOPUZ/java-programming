@@ -6,7 +6,26 @@ public class Address {
     private String city;
     private String state;
     private String zipCode;
-    private String country = "US";
+    private String country = "TURKIYE";
+
+    public Address() {
+        System.out.println("Address constructor");
+        street = "Yesilkoy";
+        city = "Durumcu";
+        state = "BABA";
+        zipCode = "3434";
+
+    }
+
+    public Address(String street,String city, String state, String zipCode){
+        this.street =street; //direct assigning
+        setStreet(street); // we can use it with conditions
+        this.city = city;
+        this.state = state;
+        this.zipCode = zipCode;
+    }
+
+
 
     @Override
     public String toString() {
