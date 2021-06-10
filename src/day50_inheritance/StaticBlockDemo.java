@@ -78,6 +78,10 @@ public class StaticBlockDemo {
                 "Volvo"));
     }
 
+        static {
+        System.out.println("static  initializer block");
+    }
+
     public StaticBlockDemo() {
         System.out.println("Constructor");
         num += 5;

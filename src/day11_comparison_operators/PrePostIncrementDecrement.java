@@ -1,5 +1,7 @@
 package day11_comparison_operators;
 
+import com.sun.xml.internal.bind.v2.runtime.output.FastInfosetStreamWriterOutput;
+
 public class PrePostIncrementDecrement {
     public static void main(String[] args) {
 
@@ -35,5 +37,14 @@ public class PrePostIncrementDecrement {
 
         int sedans = 10;
         System.out.println(sedans++);
+        System.out.println(sedans);
+
+        int a = 50;
+        int b = 22;
+        int c = a++ + ++b;
+
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
     }
 }
