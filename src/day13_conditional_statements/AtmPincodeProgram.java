@@ -21,6 +21,8 @@ public class AtmPincodeProgram {
             System.out.println("Please try again");
         }
 
+        System.out.println("THANk YOU FOR USING CHASE ATM");
+
 
     }
 }
