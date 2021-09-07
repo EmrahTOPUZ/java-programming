@@ -11,7 +11,7 @@ public class VoidMethods {
 
         displayUsaFlag();
 
-        //System.out.println("---------------FLAG OF USA--------------");
+        // System.out.println("---------------FLAG OF USA--------------");
         displayUsaFlag();
 
     }
