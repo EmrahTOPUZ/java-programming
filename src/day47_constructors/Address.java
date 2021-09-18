@@ -17,8 +17,9 @@ public class Address {
 
     }
 
+
     public Address(String street,String city, String state, String zipCode){
-        this.street =street; //direct assigning
+        this.street = street; //direct assigning
         setStreet(street); // we can use it with conditions
         this.city = city;
         this.state = state;
@@ -37,7 +38,11 @@ public class Address {
     }
 
     public void setStreet(String street) {
-        this.street = street;
+        if (street.isEmpty() || street.length() > 50 ) {
+            System.out.println("Error");
+        }else {
+            this.street = street;
+        }
     }
 
     public String getCity() {
