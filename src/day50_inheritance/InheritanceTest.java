@@ -15,5 +15,18 @@ public class InheritanceTest {
         t1.name = "Saim";
         t1.age = 25;
         t1.talk();
+        t1.teach("how to get fucked up");
+
+
+        Student student = new Student();
+        student.name = "Emrah";
+        student.age = 34;
+        student.talk();
+        student.walk();
+        student.work("Selenium automation testing");
+        student.school = "Cybertekschool";
+        student.study("Java programming inheritance");
+
+
     }
 }

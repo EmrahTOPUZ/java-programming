@@ -9,7 +9,7 @@ public class Person {
     }
 
     public void talk() {
-        System.out.println("Person is talking");
+        System.out.println(name +" is talking");
     }
 
     public void work(String job) {
