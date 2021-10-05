@@ -8,6 +8,39 @@ public class ElectricCar {
     private double price;
     private int year;
     private int range;
+    private static int count;
+    public final static int MAX_RANGE = 400;
+
+
+    public static int getCount() {
+        return count;
+    }
+
+    public final void charge() {
+        System.out.println("Charging the electric car using plug-in");
+        this.range = MAX_RANGE;
+    }
+
+    public ElectricCar(String model, String make, double price, int year, int range) {
+        setMake("Tesla");
+        this.model = model;
+        this.price = price;
+        this.year = year;
+        this.range = range;
+        count++;
+    }
+
+
+    @Override
+    public String toString() {
+        return "ElectricCar{" +
+                "model='" + model + '\'' +
+                ", make='" + make + '\'' +
+                ", price=" + price +
+                ", year=" + year +
+                ", range=" + range +
+                '}';
+    }
 
     public int getRange() {
         return range;
@@ -22,6 +55,7 @@ public class ElectricCar {
             System.out.println("ERROR: Cannot drive that far, need to charge");
         } else {
             range -= miles;
+            System.out.println("Driving " + miles + " miles ...");
         }
     }
 
