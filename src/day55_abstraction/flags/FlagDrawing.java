@@ -6,5 +6,11 @@ public class FlagDrawing {
     public static void main(String[] args) {
         RussianFlag russianFlag = new RussianFlag();
         russianFlag.draw();
+
+        FrenchFlag frenchFlag = new FrenchFlag();
+        frenchFlag.draw();
+
+        GermanFlag germanFlag = new GermanFlag();
+        germanFlag.draw();
     }
 }
