@@ -5,7 +5,17 @@ public class GreetingActions {
         MountainLanguage mountainLanguage = new MountainLanguage();
         mountainLanguage.hi();
         mountainLanguage.bye();
+
+
         Greeting gt = new MountainLanguage();
+        gt.hi();
+        gt.bye();
+
+        Japanese japanese = new Japanese();
+        japanese.hi();
+        japanese.bye();
+
+        gt = new Japanese();
         gt.hi();
         gt.bye();
     }
